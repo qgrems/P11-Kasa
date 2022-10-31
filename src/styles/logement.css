@@ -1,0 +1,414 @@
+.logementPicture
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picture_logement
+{
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.containerPictureChevron
+{
+    display: block;
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.containersTitle
+{
+    margin-left: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.titleLogement
+{
+    font-size: 36px;
+    color: #FF6060;
+    font-family: Montserrat;
+}
+.locationLogement
+{
+    font-size: 18px;
+    color: #FF6060;
+    font-family: Montserrat;
+}
+.namePlacement
+{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    display: flex;
+}
+.nameOfHost{
+    font-size: 18px;
+    color: #FF6060;
+    font-family: Montserrat;
+}
+.sizePicture
+{
+    margin-left: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+.containerTagsStar
+{
+
+    display: flex;
+    margin-left: 30px;
+}
+.containerTags
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.containerTagsStars
+{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tags
+{
+    height: 25px;
+    width: 115px;
+    background-color: #FF6060;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 20px;
+}
+.tagsfont
+{
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat;
+}
+.iconStarsRed
+{
+    color: #FF6060;
+    width: 30px;
+    height: 30px;
+}
+.iconStarsWhite
+{
+    color: #E3E3E3;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.chevronNext
+{
+    color: #FFFFFF;
+    position: absolute;
+    top: 24rem;
+    width: 46.68px;
+    height: 79.2px;
+    right: 5rem;
+}
+.chevronBack
+{
+    color: #FFFFFF;
+    position: absolute;
+    top: 24rem;
+    width: 46.68px;
+    height: 79.2px;
+    left: 5rem;
+}
+.containerDescription
+{
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.containersEquipement
+{
+    width:40%;
+    margin-right: 60px;
+}
+.containerEquipement
+{
+    width: 90%;
+    display: flex;
+    z-index: 2;
+    max-width: 100%;
+    height: 52px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rectangle
+{
+    z-index: 2;
+    max-width: 100%;
+    height: 52px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.textDescription
+{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    margin-left: 20px;
+}
+.containerResume
+{
+    z-index: 1;
+    max-width: 100%;
+    background-color: #F6F6F6;
+    margin-top: -10px;
+}
+.textOfResume
+{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 30px;
+    
+}
+.textOfResumeEquip
+{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 30px;
+    line-height: 2px;
+}
+.containersRectangle
+{
+    width: 40%;
+
+}
+.containerRectangle
+{
+    width: 90%;
+    display: flex;
+    z-index: 2;
+    max-width: 100%;
+    height: 52px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerOwner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerStars
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.logementTitle
+{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.stars{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width:711px)
+{
+    .containerPictureChevron
+    {
+        width: 100%;
+        height: 215px;
+        object-fit: cover;
+        margin-left: 30px;
+        margin-right: 30px;
+        display: block;
+    }
+    .picture_logement
+    {
+        width: 100%;
+        height: 215px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+    .chevronNext
+    {
+        color: #FFFFFF;
+        position: absolute;
+        margin-top: -100px;
+        width: 26.68px;
+        height: 39.2px;
+        right: 5rem;
+    }
+    .chevronBack
+    {
+        color: #FFFFFF;
+        position: absolute;
+        top: 18rem;
+        width: 26.68px;
+        height: 39.2px;
+        left: 5rem;
+    }
+    .tags
+    {
+        height: 25px;
+        width: 115px;
+        background-color: #FF6060;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+    .namePlacement
+    {
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+    }
+    .containerTagsStar
+    {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    .containerDescription
+    {
+        margin-top: 30px;
+        margin-left: 30px;
+        display: flex;
+       flex-direction: column;
+    }
+    .containerRectangle
+    {
+        width: 90%;
+        display: flex;
+    }
+    .containerEquipement
+    {
+        width: 90%;
+        display: flex;
+        margin-right: 0px;
+    }
+    .containersRectangle
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .containersEquipement
+    {
+        width:100%;
+        margin-right: 60px;
+    }
+}
+@media all and (max-width:424px)
+{
+    .namePlacement
+    {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media all and (max-width:640px)
+{
+    .namePlacement
+    {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .chevronNext
+    {
+        color: #FFFFFF;
+        position: absolute;
+        margin-top: -200px;
+        width: 26.68px;
+        height: 39.2px;
+        right: 5rem;
+    }
+    .chevronBack
+    {
+        color: #FFFFFF;
+        position: absolute;
+        margin-top: -100px;
+        width: 26.68px;
+        height: 39.2px;
+        left: 5rem;
+    }
+}
+@media all and (max-width:450px)
+{
+    .chevronNext
+    {
+        color: #FFFFFF;
+        position: absolute;
+        margin-top: -170px;
+        width: 26.68px;
+        height: 39.2px;
+        right: 5rem;
+    }
+    .chevronBack
+    {
+        color: #FFFFFF;
+        position: absolute;
+        margin-top: -70px;
+        width: 26.68px;
+        height: 39.2px;
+        left: 5rem;
+    }  
+}
