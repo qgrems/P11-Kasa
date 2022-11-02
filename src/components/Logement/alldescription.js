@@ -1,19 +1,10 @@
 
 import React from 'react'
 import { useIdlogement } from '../../Hooks/urlHook'
-import { ArrowDescription } from './descriptionArrow'
-import { DataDescription } from './descriptionData'
-import { Equipement } from './equipement'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import { Fade } from '../fade'
-import { ResumeMap } from '../Apropo/resumeMap'
 import { ResumeText } from '../def'
 
 export function LogementDescription() {
     const datas = useIdlogement()
-    console.log(datas)
     let description = ""
     let equipement = ""
 

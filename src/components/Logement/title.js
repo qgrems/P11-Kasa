@@ -1,4 +1,3 @@
-import { NameOfOwner } from "./name";
 import { Tags } from "./tags";
 
 export function TitleOfLogement({ data }) {

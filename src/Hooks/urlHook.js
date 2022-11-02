@@ -10,7 +10,7 @@ export function useIdlogement() {
     const [retour, setRetour] = useState([])
     const datas = useCardHook();
     useEffect(() => {
-        let ok = datas.filter((data) => {
+        let error = datas.filter((data) => {
             for (let i in data) {
                 if (
                     data.id === id
@@ -20,10 +20,10 @@ export function useIdlogement() {
             }
             return false
         });
-        if (ok.length === 0 && !premierRendu) {
+        if (error.length === 0 && !premierRendu) {
             nav("/404")
         }
-        setRetour(ok)
+        setRetour(error)
     }, [datas, nav, id, premierRendu])
     return retour
 }

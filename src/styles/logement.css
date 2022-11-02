@@ -357,18 +357,19 @@
         justify-content: center;
         flex-wrap: wrap-reverse;
     }
+
 }
 
-@media all and (max-width:640px)
+@media all and (max-width:640px) and (min-width:414px)
 {
     .namePlacement
     {
         width: 100%;
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
         margin-right: 40px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap-reverse;
     }
 

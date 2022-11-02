@@ -27,37 +27,3 @@ export default function App() {
     </Routes>
   );
 }
-
-
-
-// import React from 'react'
-// import ReactDOM from 'react-dom'
-// import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-// import { Home } from '../Page/home';
-// import '../styles/App.css';
-// import '../styles/gallery.css';
-
-
-
-
-// function App() {
-
-//   return (
-//     <React.StrictMode>
-//       <Router>
-//         <Routes>
-//           <Route exact path="/">
-//             <Home />
-//           </Route>
-//           <Route path="/ouuuuuuuuok" exact>
-//             <p>ouiouifsdfsoui</p>
-//           </Route>
-//         </Routes>
-//       </Router>
-//     </React.StrictMode>
-//   );
-// }
-
-// export default App;
-
-

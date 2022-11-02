@@ -191,11 +191,7 @@ a{
         background: #ff6161;
         list-style-type: none;
         display: flex;
-        flex-wrap: wrap;
-        margin:10px;
-        margin-top: 10px;
-        
-        
+        flex-wrap: wrap;        
     }
         .card_picture
     {
