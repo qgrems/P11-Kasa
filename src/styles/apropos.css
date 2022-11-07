@@ -6,19 +6,10 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.containerFiabilite
-{
-    width: 100%;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 .fabilite
 {
     z-index: 2;
-    width: 90%;
+    width: 100%;
     height: 47px;
     background-color:#FF6060;
     border-radius: 5px;
@@ -26,6 +17,31 @@
     margin-top: 30px;
     align-items: center;
     justify-content: space-between;
+
+}
+.containerApropos
+{
+    width: 80%;
+    max-width: 1023px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-text
+    {
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        margin-left: 20px; 
+    }
+    .texte-Apropo
+{
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 15px;
 }
 .fabilite-name
 {
@@ -33,14 +49,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.container-text
-{
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 500;
-    font-family: 'Montserrat';
-    margin-left: 20px; 
-}
+
 
 .icon
 {
@@ -52,25 +61,92 @@
 .square
 {
     z-index: 1;
-    width: 90%;
     background-color: #F6F6F6;
     border-radius: 5px;
     display: flex;
     align-items: center;
     margin-top: -3px;
 }
-.texte-Apropo
-{
-    color: #FF6060;
-    font-size: 24px;
-    font-weight: 400;
-    margin: 15px;
-}
-
 .icon-Text
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.picture_img_propos
+{
+    width: 100%;
+    height: 223px;
+    justify-content: center;
+    display: flex;
+    object-fit: cover;
+    border-radius: 25px;
+    background-blend-mode: darken;
+    opacity: 0.7;
+
+}
+
+.containerFiabilite
+{
+   
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media all and (max-width:700px)
+{
+    .picture_img_propos
+    {
+        width: 100%;
+        height: 223px;
+        justify-content: center;
+        display: flex;
+        object-fit: cover;
+        border-radius: 25px;
+        left: 100px;
+        top: 152px;
+    }
+    .containerApropos
+    {
+        width: 100%;
+        max-width: 1030px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .containerFiabilite
+    {
+    
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .container-text
+    {
+        color: #FFFFFF;
+        font-size: 13px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        margin-left: 20px; 
+    }
+    .texte-Apropo
+    {
+        color: #FF6060;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 15px;
+    }
 }

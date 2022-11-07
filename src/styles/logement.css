@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+.App-header
+{
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
 .logementPicture
 {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 .picture_logement
 {
+    z-index: 1;
     width: 100%;
     height: 415px;
     border-radius: 25px;
@@ -14,18 +24,29 @@
 }
 .containerPictureChevron
 {
+    position: relative;
     display: block;
-    width: 100%;
+    width: 1240px;
     height: 415px;
     object-fit: cover;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 .containersTitle
 {
-    margin-left: 30px;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.nbrIndex
+{ 
+  position: absolute;
+  top: 32rem;
+}
+.nbrOfPicture
+{
+    z-index: 2;
+    width: 20px;
+    color: white;
+
 }
 .titleLogement
 {
@@ -43,7 +64,6 @@
 {
     flex-direction: column;
     align-items: center;
-    margin-right: 40px;
     display: flex;
 }
 .nameOfHost{
@@ -62,7 +82,7 @@
 {
 
     display: flex;
-    margin-left: 30px;
+
 }
 .containerTags
 {
@@ -96,6 +116,9 @@
     color: white;
     font-size: 14px;
     font-family: Montserrat;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .iconStarsRed
 {
@@ -110,42 +133,59 @@
     height: 30px;
 }
 
+.containerChevrontNext
+{
 
-
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 11rem;
+    right: 5rem;
+}
+.containerChevrontBack
+{
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 11rem;
+    display: flex;
+    left:4rem;
+}
 .chevronNext
 {
     color: #FFFFFF;
-    position: absolute;
-    top: 24rem;
     width: 46.68px;
     height: 79.2px;
-    right: 5rem;
 }
 .chevronBack
 {
     color: #FFFFFF;
-    position: absolute;
-    top: 24rem;
     width: 46.68px;
     height: 79.2px;
-    left: 5rem;
 }
 .containerDescription
 {
-    margin-top: 30px;
     margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+
+.descriptionContain
+{
+    width: 1240px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .containersEquipement
 {
-    width:40%;
-    margin-right: 60px;
+    width:50%;
 }
 .containerEquipement
 {
-    width: 90%;
     display: flex;
     z-index: 2;
     max-width: 100%;
@@ -202,12 +242,12 @@
 }
 .containersRectangle
 {
-    width: 40%;
+    width: 50%;
+    margin-right: 40px;
 
 }
 .containerRectangle
 {
-    width: 90%;
     display: flex;
     z-index: 2;
     max-width: 100%;
@@ -235,12 +275,22 @@
 .logementTitle
 {
     margin-top: 30px;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.ContainerlogementTitle
+{
+    width: 1240px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+   
 }
+
 .stars{
     
     display: flex;
@@ -248,63 +298,16 @@
     justify-content: center;
 }
 
-@media all and (max-width:711px)
+@media all and (max-width:1198px)
 {
-    .containerPictureChevron
-    {
-        width: 100%;
-        height: 215px;
-        object-fit: cover;
-        margin-left: 30px;
-        margin-right: 30px;
-        display: block;
-    }
-    .picture_logement
-    {
-        width: 100%;
-        height: 215px;
-        border-radius: 25px;
-        object-fit: cover;
-    }
-    .chevronNext
-    {
-        color: #FFFFFF;
-        position: absolute;
-        margin-top: -100px;
-        width: 26.68px;
-        height: 39.2px;
-        right: 5rem;
-    }
-    .chevronBack
-    {
-        color: #FFFFFF;
-        position: absolute;
-        top: 18rem;
-        width: 26.68px;
-        height: 39.2px;
-        left: 5rem;
-    }
-    .tags
-    {
-        height: 25px;
-        width: 115px;
-        background-color: #FF6060;
-        border-radius: 10px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        margin-right: 20px;
-        margin-bottom: 5px;
-    }
     .namePlacement
     {
         width: 100%;
         flex-direction: row-reverse;
         align-items: center;
-        margin-right: 40px;
+        
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap-reverse;
     }
     .containerTagsStar
     {
@@ -314,102 +317,183 @@
         display: flex;
         align-items: center;
     }
-    .containerDescription
+}
+
+@media all and (max-width:800px)
+{
+    .descriptionContain
     {
-        margin-top: 30px;
-        margin-left: 30px;
         display: flex;
-       flex-direction: column;
-    }
-    .containerRectangle
-    {
-        width: 90%;
-        display: flex;
-    }
-    .containerEquipement
-    {
-        width: 90%;
-        display: flex;
-        margin-right: 0px;
+        flex-direction: column;
     }
     .containersRectangle
     {
         width: 100%;
-        display: flex;
-        flex-direction: column;
         margin-bottom: 20px;
     }
     .containersEquipement
     {
         width:100%;
-        margin-right: 60px;
+
     }
 }
-@media all and (max-width:424px)
+@media all and (max-width:700px)
 {
-    .namePlacement
+    .containerTagsStar
     {
+        margin-top: 10px;
         width: 100%;
-        flex-direction: row;
-        align-items: center;
-        margin-right: 40px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap-reverse;
-    }
-
-}
-
-@media all and (max-width:640px) and (min-width:414px)
-{
-    .namePlacement
-    {
-        width: 100%;
-        flex-direction: row-reverse;
-        align-items: center;
-        margin-right: 40px;
-        display: flex;
         justify-content: space-between;
-        flex-wrap: wrap-reverse;
+        display: flex;
+        align-items: center;
+    }
+    .titleLogement
+    {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #FF6060;
+        font-family: Montserrat;
+    }
+    .locationLogement
+    {
+        font-size: 14px;
+        color: #FF6060;
+        font-family: Montserrat;
+    }
+    .tagsfont
+    {
+        color: white;
+        font-size: 10px;
+        font-family: Montserrat;
+    }
+    .nameOfHost{
+        font-size: 12px;
+        color: #FF6060;
+        font-family: Montserrat;
+    }
+    .iconStarsRed
+    {
+        color: #FF6060;
+        width: 15px;
+        height: 15px;
+    }
+    .iconStarsWhite
+    {
+        color: #E3E3E3;
+        width: 15px;
+        height: 15px;
+    }
+    .picture_logement
+    {
+        width: 100%;
+        height: 255px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+    .containerPictureChevron
+    {
+        width: 100%;
+        height: 255px;
+        object-fit: cover;
+        display: block;
+    }
+    .logementTitle
+    {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .containerDescription
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+
+    }
+    .logementPicture
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .tags
+    {
+        height: 25px;
+        width: 84px;
+        background-color: #FF6060;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .containerChevrontNext
+    {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top:8rem;
+        right: 1rem;
+    }
+    .containerChevrontBack
+    {
+        height: auto;
+        width: auto;
+        left: 1rem;
+        position: absolute;
+        top:8rem;
     }
 
     .chevronNext
     {
         color: #FFFFFF;
+        width: 11.67.68px;
+        height: 19.8px;
+       
+    }
+    .nbrIndex
+    { 
         position: absolute;
-        margin-top: -200px;
-        width: 26.68px;
-        height: 39.2px;
-        right: 5rem;
+        top: 36rem;
+        margin-top: -285px;
     }
     .chevronBack
     {
         color: #FFFFFF;
-        position: absolute;
-        margin-top: -100px;
-        width: 26.68px;
-        height: 39.2px;
-        left: 5rem;
-    }
-}
-@media all and (max-width:450px)
-{
-    .chevronNext
-    {
-        color: #FFFFFF;
-        position: absolute;
-        margin-top: -170px;
-        width: 26.68px;
-        height: 39.2px;
-        right: 5rem;
-    }
-    .chevronBack
-    {
-        color: #FFFFFF;
-        position: absolute;
-        margin-top: -70px;
-        width: 26.68px;
-        height: 39.2px;
-        left: 5rem;
+
+        width: 11.67.68px;
+        height: 19.8px;
+        
     }  
+    .sizePicture
+    {
+        margin-left: 10px;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+    }
+    .nameOfHost{
+        width: 45px;
+        font-size: 12px;
+        color: #FF6060;
+        font-family: Montserrat;
+    }
+    .containerTagsStars
+    {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }

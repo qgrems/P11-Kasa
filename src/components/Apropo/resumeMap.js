@@ -6,12 +6,13 @@ import { ResumeText } from '../def'
 export function ResumeMap() {
     const datas = useResumeHook()
     return (
-        < section className='containerFiabilite' >
+        <section className='containerFiabilite' >
             {
                 datas.map(data =>
-                    <ResumeText data={data} key={data.title}></ResumeText>)
+
+                    <ResumeText data={data} key={data.title} datas={{ class: "containerApropos" }}></ResumeText>)
             }
-        </section >
+        </section>
     )
 
 }

@@ -17,13 +17,14 @@ export function LogementDescription() {
     }
     return (
         <section className='containerDescription'>
-            <div className='containersRectangle'>
-                <ResumeText data={{ title: "Descriptions", description: description, class: "containerRectangle" }}> </ResumeText>
+            <div className='descriptionContain'>
+                <div className='containersRectangle'>
+                    <ResumeText data={{ title: "Descriptions", description: description, class: "containerRectangle" }} datas={{ class: "" }}> </ResumeText>
+                </div>
+                <div className='containersEquipement'>
+                    <ResumeText data={{ title: "Equipements", description: equipement, class: "containerEquipement" }} datas={{ class: "" }}></ResumeText>
+                </div>
             </div>
-            <div className='containersEquipement'>
-                <ResumeText data={{ title: "Equipements", description: equipement, class: "containerEquipement" }}></ResumeText>
-            </div>
-
         </section>
     )
 }
