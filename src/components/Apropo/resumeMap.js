@@ -9,7 +9,6 @@ export function ResumeMap() {
         <section className='containerFiabilite' >
             {
                 datas.map(data =>
-
                     <ResumeText data={data} key={data.title} datas={{ class: "containerApropos" }}></ResumeText>)
             }
         </section>

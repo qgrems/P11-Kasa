@@ -16,6 +16,7 @@ export function PictureLogement({ data }) {
         setIndex(index + data.pictures.length)
         setNbrIndex(index + data.pictures.length + 1)
     }
+
     return (
         <>
             <section className='logementPicture'>
@@ -35,7 +36,6 @@ export function PictureLogement({ data }) {
                             </> : ""
                     }
                 </div >
-
                 <div className="nbrIndex">
                     <span className="nbrOfPicture">{nbrIndex}/{data.pictures.length}</span>
                 </div>

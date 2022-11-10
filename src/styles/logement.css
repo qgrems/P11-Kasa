@@ -497,3 +497,11 @@
         align-items: center;
     }
 }
+
+@media all and (max-width:576px)
+{
+    .nbrIndex
+    {
+        display: none;
+    }
+}
